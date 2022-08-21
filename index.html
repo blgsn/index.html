@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Navbar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <img class="DigitusLogo" src="images/DigitusLogo.png" alt="DigitusLogo">
+            <a class="cta" href="#"><button class="button">+</button></a>
+            <nav>
+                
+                <ul class="nav_links" >
+                    <li><a href="#">Moms</a></li>
+                    <li><a href="#">Experts</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">MomTalk</a></li> 
+                </ul>
+                    
+            </nav>
+            <img class="search" src="images/loupe.png" alt="search"  width="17" height="17">
+            <div class="col-sm-4">
+                <div class="item">
+                <a href="#">
+                    <a1 class="notify-badge">4</a1>
+                    <img class="messages" src="images/messages.png" alt="messages" width="21.5" height="23.5" > 
+                </a>
+           </div>
+                    <div class="item1">
+                        <a href="#">
+                    <a1 class="notify-badge1">12</a1>
+                    <img class="bell" src="images/bell.png" alt="messages" width="19.5" height="20.5" >
+                     
+                     </a></div> </div>
+ <img class="profile"src="images/profile1.png" alt="profile"  width="35" height="35"> 
+ <img class="arrow"src="images/down-arrow.png" alt="arrow" width="10" height="10"> 
+ <hr class ="vl" style="margin-left:20em;"/>
+ <h5 class ="vl" ></h5>
+        </header> 
+        <h1 class="hiking">
+            <img class="mountain" style="margin-bottom: -12.5em;border-radius: 2%;
+            border: 1px solid rgb(197, 189, 189);" 
+            src="images/hiking.png" alt="hiking" width="165" height="350">
+        </h1>
+        <div class="people" style="padding-top: 0.6em; padding-bottom: 2.3em; 
+        position:fixed; margin-top: 24.5em;">
+            <p class="mom" style="background: rgb(255, 255, 255); font-weight: 600;
+            font-size: 14px; color: #1f1d1d; margin-left:2.3em;">Momsista</p>
+             <p class="family" style="background: rgb(255, 254, 254); font-weight: 800;
+             font-size: 14px; color: #1f1d1d; margin-left: 0.5em;">Family Meeting</p>
+              <p class="july" style="background: rgb(255, 255, 255); font-weight: 500;
+              font-size: 14px; color: #c0bcbc;margin-left: 3em;">July'19</p>
+            <img class="human" src="images/people.png" 
+            style="background-color: rgb(255, 255, 255);" alt="human" width="130" height="50">
+            <button class="join" style="background-color: rgb(255, 255, 255);
+            border: 1.5px solid rgb(56, 52, 52); border-radius:20px; color: #1f1d1d;
+            padding-top: 2.2px; padding-bottom: 2.2px; padding-left: 2.2em;
+             padding-right: 2.2em; font-size: 11px;margin-top: 5.8em;margin-left: -8.8em;
+             ">Join</button>
+            </div>
+        <div class="pagination-wrapper" style="position: fixed;">
+                <div class="pagination" style=" top:35.7em;left:59.7em;">
+                  <h4></h4>
+                  <h3></h3>
+                  <h3></h3>
+                  <h3></h3>
+                </div>
+              </div>
+    <span>
+        <div class="writeCard" style="padding-top: 1.3em; padding-bottom: 1.3em; margin-right:8em;
+        display: inline-block;">
+            <img class="profile1"src="images/profile1.png" alt="profile1" width="55" height="55" 
+            style="margin-right:0.5em; display: inline-block; position: relative; ">
+            <input type="write" class="write" style="width: 22.3em;height: 3em;display: inline-block;
+            position: relative; bottom:20px;" placeholder="Write something, Merve">
+            <div class="face">
+                <div class="mouth"></div>
+                    <div class="eye">
+                        <div class="left-eye"></div>
+                          <div class="right-eye"></div>
+                    
+                </div>
+            </div>
+            <p class="plus">+</p>
+        </div>
+
+        <div class="card">
+            
+            <div class="post_header">
+                <img src="images/doctor.png" alt="">
+                <div class="heading" style=" margin-left: 0.5em;">
+                    <p class="main_heading">Ahmet Yıldız Kenter</p>
+                    <p class="sub_heading">Medical Doctor</p>
+                </div>
+            </div>
+           
+            <div class="post_img">
+                <img src="images/baby.png" alt="">
+            </div>
+            <img class="dotdot" src="images/dot.png" alt=""  >
+           <div class="post_footer">
+                <div class="left_box">
+                    
+                    <img src="images/cards-heart.png" onclick="likeButton()"> 
+                    
+                    <p class="hview">3</p>
+                    <script>
+                    function likeButton(){
+                        let left_box=document.querySelector('.left_box');
+                        let hview=document.querySelector('.hview');
+                        if (left_box.src.match("images/cards-heart.png")){
+                            left_box.src="image/heartRed.png";
+                            hview.innerHTML="4";
+                        }
+                        else{
+                            left_box.src="images/cards-heart.png";
+                            hview.innerHTML="3";
+                        }
+                    }</script>   
+                    <div class="left_box1">
+                    <img src="images/share.png" alt="">
+                    <p class="sview">1</p>
+                    <p class="two">2</p>
+                    <p class="min">Min</p>
+                    <p class="dott">.</p>
+                    <p class="four">4</p>
+                    <p class="views">Views</p>
+                    <p class="dott1">.</p>
+                    <p class="five">5</p>
+                    <p class="commen">Comments</p>
+                    <p class="parag">Normal healthy 21 y/o patient came in presenting odd symptoms.<br> 
+                        Patient described a new set of symptoms they all get well…</p>
+                        <p class="hashtag">#child #doctor #hospital #fever</p>
+                        <hr class ="vl1"  /><hr class ="vl2" />
+                        <div class="addComments">
+                        <input type="texts" class="texts" placeholder="Comment This">
+                        <button class="button1">Post</button>
+                       
+                    
+                    </div></div></div>
+                
+                <div class="right_box">
+                    <img src="images/bookmark.png" alt="">
+                    
+                </div>
+            
+            </div>
+        </div>
+     </span> 
+
+        <span >
+            <div class="card2">
+                <button class="arw" style="border-radius:25px;border:none;background-color: white;font-size: 16px;
+                padding-right: 4px;padding-left: 4px;position: absolute;margin-left: 27em;margin-top: 7em;">></button>
+                <button class="arw" style="border-radius:25px;border:none;background-color: white;font-size: 16px;
+                padding-right: 4px;padding-left: 4px;position: absolute;margin-top: 7em;margin-left: -0.5em;"><</button>
+                <div class="adv1">
+                <p class="adv" style="margin-left: 10.5em; color: rgba(58, 57, 50, 0.836); 
+                display: inline-block;background: rgb(221, 222, 223);font-size: 13px;font-weight: 700;">Members You May Know</p>
+                <p class="seeall" style="margin-left: 8em;color: rgb(46, 51, 53);margin-right: 2px;
+                 display:inline-block;font-weight: 500; font-size: 10px;background: rgb(221, 222, 223);">SEE ALL</p></div>
+            <div class="card1" style="width:8em; height: 12em;">
+                <h1 class="close" style="font-size: 28px; font-weight: 300;margin-left:3.8em;
+                margin-right: 0.8em;margin-top: -0.8em;">&times;</h1>
+            <div class="post_header1">
+                <img src="images/ahmet.png" alt="">
+                <div class="heading1">
+                    <p class="main_heading1">Ahmet Yılmaz</p>
+                    <p class="sub_heading1">Medical Doctor</p>
+                    <p class="tit">İzmir</p>
+                    <button class="button2">Follow</button>
+               </div> </div></div>
+               <div class="card3" style="width:8em; height: 12em;">
+                <h1 class="close" style="font-size: 28px; font-weight: 300;
+                margin-left:3.8em;margin-right: 0.8em;margin-top: -0.8em;">&times;</h1>
+               <div class="post_header2">
+                <img src="images/melike.png" alt="">
+                <div class="heading1">
+                    <p class="main_heading1">Melike Kadıoğlu</p>
+                    <p class="tit1">İstanbul</p>
+                    <button class="button3">Follow</button>
+               </div> </div></div>
+               <div class="card4" style="width:8em; height: 12em;">
+                <h1 class="close" style="font-size: 28px; font-weight: 300;
+                margin-left:3.8em;margin-right: 0.8em;margin-top: -0.8em;">&times;</h1>
+               <div class="post_header2">
+                <img src="images/ayşe.png" alt="">
+                <div class="heading1">
+                    <p class="main_heading1">Ayşe Yıldırım</p>
+                    <p class="tit1">Isparta</p>
+                    <button class="button3">Follow</button>
+               </div> </div></div>
+            
+          </div>  </span>  
+        <span>
+          <div class="card-women">
+             <div class="post_header">
+                <img src="images/mother-with-toddler-working-PNRU45G.png" alt="">
+                <div class="heading">
+                    <p class="main_headingg" style="font-size: 11px;
+                    font-weight: 600;padding-right: 30em;
+                    color: rgba(0, 0, 0, 0.836);margin-top: 2.5px;
+                    background: #ffff;">Derya Deniz</p>
+                </div>
+            </div>
+           
+            <div class="post_img">
+                <img src="images/women.png" alt="">
+             </div>
+             <img class="play" width="80" height="80" src="images/play.png" style="background: transparent; 
+             color:transparent; margin-top:-13em;margin-bottom:6em;margin-left: 10.5em;">
+            <img class="dotdot1" src="images/dot.png" alt="">
+           <div class="post_footer">
+                <div class="left_box-">
+                    
+                    <img src="images/heartRed.png" onclick="likeButton()"> 
+                    
+                    <p class="hview" style=" margin-top:-25px;">24</p>
+                    <script>
+                    function likeButton(){
+                        let left_box=document.querySelector('.left_box');
+                        let hview=document.querySelector('.hview');
+                        if (left_box.src.match("images/cards-heart.png")){
+                            left_box.src="image/heartRed.png";
+                            hview.innerHTML="4";
+                        }
+                        else{
+                            left_box.src="images/cards-heart.png";
+                            hview.innerHTML="3";
+                        }
+                    }</script>   
+                    <div class="left_box1">
+                    <img src="images/share.png" style="margin-top: -1.2em; margin-bottom: 0.3em;" alt="">
+                    <p class="sview"></p>
+                    <p class="two">2</p>
+                    <p class="min">Min</p>
+                    <p class="dott">.</p>
+                    <p class="four">4</p>
+                    <p class="views">Views</p>
+                    <p class="dott1">.</p>
+                    <p class="five">5</p>
+                    <p class="commen">Comments</p>
+                    <p class="parag">The mom said she struggled with fertility issues and had an ectopic<br> 
+                        pregnancy after giving birth to her daughter.</p>
+                        <p class="hashtag">#child #doctor #hospital #fever</p>
+                        <hr class ="vl1" style="border-color:transparent;background-color: transparent;"  /><hr class ="vl2" />
+                        <div class="addComments">
+                        <input type="texts" class="texts" placeholder="Comment This">
+                        <button class="button1">Post</button>
+                       
+                    
+                    </div></div></div>
+                
+                <div class="right_box1">
+                    <img src="images/bookmark-blue.png" alt="">
+                    
+                </div>
+            <img src="images/check-bold.png" alt="" width="15" heigth="25" style="margin-left: 25.1em; 
+            background-color:transparent; position: absolute; ">
+            </div>
+        </div>
+     
+    </span> 
+    <span>
+        
+        <div class="card-doctor">
+            
+            <div class="post_header">
+                <img src="images/doctor.png" alt="">
+                <div class="heading">
+                    <p class="main_heading">Ahmet Yıldız Kenter</p>
+                    <p class="sub_heading">Medical Doctor</p>
+                </div>
+            </div>
+            <div class="post_img" style="margin-top: -6px; margin:2em;
+            margin-bottom: -2.1px; padding-top: 2.5px ; margin-left: -0.5em;
+            margin-right: 0em; padding-bottom: 3.8px;
+            background:linear-gradient(to right ,rgb(238, 236, 232) ,#ffd416 ,#2ad655,#46c1e0 ,#46c1e0 );">
+                
+            </div>
+            <img class="dotdot" src="images/dot.png" style="margin-top: -1.8em;" alt="">
+            
+           <div class="post_footer">
+                <div class="left_box">
+                    
+                     <img src="images/cards-heart.png"> 
+                    <p class="hview">1</p>
+                    <script>
+                       
+                 //   function likeButton(){
+                   //     let left_box=document.querySelector('.left_box');
+                     //   let hview=document.querySelector('.hview');
+                       // if (left_box.src.match("images/cards-heart.png")){
+                         //   left_box.src="image/heartRed.png";
+                           // hview.innerHTML="4";
+                        //}
+                        //else{
+                          //  left_box.src="images/cards-heart.png";
+                            //hview.innerHTML="3";
+                        //}
+                   // }</script>   
+                    <div class="left_box1">
+                    <img src="images/share.png" alt="">
+                    <p class="sview" style="color: transparent;">1</p>
+                    <p class="two">2</p>
+                    <p class="min">Min</p>
+                    <p class="dott">.</p>
+                    <p class="four">4</p>
+                    <p class="views">Views</p>
+                    <p class="dott1">.</p>
+                    <p class="five">5</p>
+                    <p class="commen">Comments</p>
+                    <p class="parag">The mom said she struggled with fertility issues and had an ectopic<br> 
+                        pregnancy after giving birth to her daughter.</p>
+                        <p class="hashtag">#child #doctor #hospital #fever</p>
+                        <hr class ="vl1" style="border-color: transparent;background-color: transparent;"/><hr class ="vl2" />
+                        <div class="addComments">
+                        <input type="texts" class="texts" placeholder="Comment This">
+                        <button class="button1">Post</button>
+                       
+                    
+                    </div></div></div>
+                
+                <div class="right_box">
+                    <img src="images/bookmark.png" alt="">
+                    
+                </div>
+            
+            </div>
+        </div>
+     
+    </span> 
+    <span>
+        
+        <div class="card" style="margin-top:-27em">
+            
+            <div class="post_header">
+                <img src="images/doctor.png" alt="">
+                <div class="heading">
+                    <p class="main_heading">Ahmet Yıldız Kenter</p>
+                    <p class="sub_heading">Medical Doctor</p>
+                </div>
+            </div>
+           
+            <div class="post_img">
+                <img src="images/mother.png" alt="">
+            </div>
+            <img class="dotdot" src="images/dot.png" alt=""  >
+           <div class="post_footer">
+                <div class="left_box">
+                    
+                    <img src="images/cards-heart.png" onclick="likeButton()"> 
+                    
+                    <p class="hview">3</p>
+                    <script>
+                    function likeButton(){
+                        let left_box=document.querySelector('.left_box');
+                        let hview=document.querySelector('.hview');
+                        if (left_box.src.match("images/cards-heart.png")){
+                            left_box.src="image/heartRed.png";
+                            hview.innerHTML="4";
+                        }
+                        else{
+                            left_box.src="images/cards-heart.png";
+                            hview.innerHTML="3";
+                        }
+                    }</script>   
+                    <div class="left_box1">
+                    <img src="images/share.png" alt="">
+                    <p class="sview">1</p>
+                    <p class="two">2</p>
+                    <p class="min">Min</p>
+                    <p class="dott">.</p>
+                    <p class="four">4</p>
+                    <p class="views">Views</p>
+                    <p class="dott1">.</p>
+                    <p class="five">5</p>
+                    <p class="commen">Comments</p>
+                    <p class="parag">Normal healthy 21 y/o patient came in presenting odd symptoms.<br> 
+                        Patient described a new set of symptoms they all get well…</p>
+                        <p class="hashtag">#child #doctor #hospital #fever</p>
+                        <hr class ="vl1" style="border-color: transparent;background-color: transparent;" /><hr class ="vl2" />
+                        <div class="addComments">
+                        <input type="texts" class="texts" placeholder="Comment This">
+                        <button class="button1">Post</button>
+                       
+                    
+                    </div></div></div>
+                
+                <div class="right_box">
+                    <img src="images/bookmark.png" alt="">
+                    
+                </div>
+            
+            </div>
+        </div>
+    </span>
+    <span>
+        <div class="card" style="margin-top:-25em;border-top-right-radius: 0px; 
+        border-top-left-radius: 0px; ">
+            <div class="post_header" style="
+            margin-top: -1.5em;padding-top:0.8em; background: linear-gradient(to right ,
+            rgb(203, 210, 226),rgb(205, 211, 224) ,#b6e4ff,#b6e4ff ,#b6e4ff);padding-bottom: 0.5em;">
+                <img src="images/m.png" style="background: 1px rgb(252, 107, 107);"  alt="">
+                <div class="heading" style="background: linear-gradient(to right ,
+                rgb(203, 210, 226) ,#b6e4ff,#b6e4ff );">
+                    <p class="main_heading" style="padding-right: 32.5em;
+                    background: linear-gradient(to right ,
+            rgb(203, 210, 226) ,#b6e4ff,#b6e4ff );">Milupa</p>
+                    <p class="sub_heading" style="color: rgb(252, 107, 107);
+                    background: linear-gradient(to right ,
+            rgb(203, 210, 226) ,#b6e4ff,#b6e4ff );">SPONSORED</p>
+                </div>
+            </div>
+           
+            <div class="post_image">
+                <img src="images/milupa.png" alt="">
+                
+                 </div>
+                 <div class="post_image-">
+                <img src="images/milupanontio.png" style="width: 190px;
+                height: 200px; background-color: white; margin-top: -14.5em;margin-bottom: 4em; 
+                margin-left: 13.3em; position: absolute;" alt="">
+           </div> <div class="post-img">
+                    <img src="images/green.png" alt="" style="width: 105px;height: 105px; background:transparent;
+                    opacity:0.15;margin-top: -13.3em;margin-bottom: 4.4em;margin-left: 8em;position: absolute;">
+                </div>
+                <div class="post-img1">
+                    <img src="images/circle.png" alt="" style="width: 180px;height: 180px; background:transparent;
+                    opacity:0.15;margin-top: -15.5em;margin-bottom: 4.7em;margin-left: 8.5em;position: absolute;">
+                </div>
+            <img class="dotdot" style="margin-bottom: -1em;" src="images/dot.png" alt="" style="margin-top:-20.3em ;">
+           <div class="post_footer">
+                <div class="left_box">
+                    
+                    <img src="images/cards-heart.png" onclick="likeButton()"> 
+                    
+                    <p class="hview">3</p>
+                    <script>
+                    function likeButton(){
+                        let left_box=document.querySelector('.left_box');
+                        let hview=document.querySelector('.hview');
+                        if (left_box.src.match("images/cards-heart.png")){
+                            left_box.src="image/heartRed.png";
+                            hview.innerHTML="4";
+                        }
+                        else{
+                            left_box.src="images/cards-heart.png";
+                            hview.innerHTML="3";
+                        }
+                    }</script>   
+                    <div class="left_box1">
+                    <img src="images/share.png" alt="">
+                    <p class="sview">1</p>
+                    <p class="two">2</p>
+                    <p class="min">Min</p>
+                    <p class="dott">.</p>
+                    <p class="four">4</p>
+                    <p class="views">Views</p>
+                    <p class="dott1">.</p>
+                    <p class="five">5</p>
+                    <p class="commen">Comments</p>
+                    <p class="parag">Normal healthy 21 y/o patient came in presenting odd symptoms.<br> 
+                        Patient described a new set of symptoms they all get well…</p>
+                        <p class="hashtag">#child #doctor #hospital #fever</p>
+                        <hr class ="vl1" style="border-color: transparent;background-color: transparent;" /><hr class ="vl2" />
+                        <div class="addComments">
+                        <input type="texts" class="texts" placeholder="Comment This">
+                        <button class="button1">Post</button>
+                       
+                    
+                    </div></div></div>
+                
+                <div class="right_box">
+                    <img src="images/bookmark.png" alt="">
+                    
+                </div>
+            
+            </div>
+        </div>
+    </span>
+    <span >
+        
+        <div class="card" style="margin-top: -13em;padding-bottom: 21em;">
+            
+            <div class="post_header">
+                <img src="images/doctor.png" alt="">
+                <div class="heading">
+                    <p class="main_heading">Ahmet Yıldız Kenter</p>
+                    <p class="sub_heading">Medical Doctor</p>
+                </div>
+            </div>
+           
+            <div class="post_imgg">
+                <img src="images/mother.png" alt="">
+            </div>
+            <img class="dotdot" src="images/dot.png" alt=""  >
+           <div class="post_footer">
+                <div class="left_box" >
+                    
+                    <img src="images/cards-heart.png" style="margin-top:1em;position: absolute;"
+                     onclick="likeButton()"> 
+                    
+                    <p class="hview" style="margin-top: 4em;margin-left: 2.5em;
+                    margin-bottom:-3em;position: absolute;">3</p>
+                    <script>
+                    function likeButton(){
+                        let left_box=document.querySelector('.left_box');
+                        let hview=document.querySelector('.hview');
+                        if (left_box.src.match("images/cards-heart.png")){
+                            left_box.src="image/heartRed.png";
+                            hview.innerHTML="4";
+                        }
+                        else{
+                            left_box.src="images/cards-heart.png";
+                            hview.innerHTML="3";
+                        }
+                    }</script>   
+                    <div class="left_box1">
+                    <img src="images/share.png" style="margin-bottom:-6em;
+                    margin-top:8em;position: absolute;margin-left: 4em;" alt="">
+                    <p class="sview" style="margin-top: 14.1em;position: absolute;
+                    margin-left: 7em;">1</p>
+                    <p class="two"style="position: absolute;margin-top:18.5em; margin-left:1.2em;">2</p>
+                    <p class="min"style="position: absolute;margin-top:18.5em; margin-left:2em;">Min</p>
+                    <p class="dott"style="position: absolute;margin-top:18.2em; margin-left:4em;">.</p>
+                    <p class="four"style="position: absolute;margin-top:18.5em; margin-left:4.5em;">4</p>
+                    <p class="views"style="position: absolute;margin-top:18.5em; margin-left:5.5em;">Views</p>
+                    <p class="dott1"style="position: absolute;margin-top:18.2em; margin-left:8.3em;">.</p>
+                    <p class="five"style="position: absolute;margin-top:18.5em; margin-left:8.8em;">5</p>
+                    <p class="commen"style="position: absolute;margin-top:18.5em; margin-left:9.8em;">Comments</p>
+                    <p class="parag" style="position: absolute;margin-top: 17em;
+                    margin-left: 1em;">Maecenas pulvinar nulla eu nibh imperdiet, et ullamcorper metus<br> 
+                        interdum. Duis vehicula quam non tempor viverra. Quisque sit<br>
+                        amet commodo sem. Quisque eu cursus libero. Suspendisse<br> 
+                        cursus magna dui, id condimentum mi rutrum ac. Sed eget orci at<br> 
+                        tortor iaculis pretium. Duis in feugiat odio, a faucibus nisi.<br> 
+                        Maecenas et sollicitudin ipsum, porta accumsan dui. Maecenas<br> 
+                        malesuada suscipit ligula vitae dignissim. Curabitur eu lacinia<br> 
+                        enim. Fusce lectus lorem, ultrices ut arcu sed, gravida elementum<br> 
+                        lectus. Ut lobortis ullamcorper neque, et faucibus sem<br> 
+                        pellentesque ac.</p>
+                        <p class="hashtag" style="position: absolute;margin-left: 1em;
+                        margin-top: 35em;">#child #doctor #hospital #fever</p>
+                        <hr class ="vl1" style="position:relative;margin-top:26.5em;margin-left: 0em;margin-right: -27em;" />
+                        <hr class ="vl2"style=background:transparent;border-color:transparent; />
+                        <div class="addComments" style="position:absolute;margin-top: 12.5em;margin-left: 1em;">
+                        <input type="texts" class="texts" placeholder="Comment This">
+                        <button class="button1" style="position:absolute;margin-left: 27em;">Post</button>
+                       
+                    
+                    </div></div></div>
+                
+                <div class="right_box">
+                    <img src="images/bookmark.png" style="position: absolute;margin-left: -2em;margin-top: 0.5em;" alt="">
+                    
+                </div>
+            
+            </div>
+        </div>
+     
+    </span>  
+   
+</body>
+</html>
